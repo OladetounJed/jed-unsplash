@@ -18,7 +18,7 @@ class UI {
     this.alert = document.createElement("h1");
   }
 
-   /* 
+  /* 
   ---------
   
  Dsiplay Placeholder Function
@@ -34,7 +34,7 @@ class UI {
     document.querySelector(".images").innerHTML = output;
   }
 
-   /* 
+  /* 
   ---------
   
  Dsiplay African Picture Placeholder
@@ -42,6 +42,14 @@ class UI {
   ---------
   */
   displayPictures(user) {
+    let formConChild = document.querySelector(".header__form-con")
+      .lastElementChild;
+    let form = document.querySelector(".header__form");
+    if (formConChild.tagName === "H1") {
+      form.style.display = "block";
+      
+      formConChild.replaceWith(form);
+    }
     let output = "";
 
     user.forEach(function(u) {
@@ -66,7 +74,7 @@ class UI {
     document.querySelector(".images").innerHTML = output;
   }
 
-    /* 
+  /* 
   ---------
   
 Searched Result Placeholder Function
@@ -74,12 +82,12 @@ Searched Result Placeholder Function
   ---------
   */
 
-
-
   displaySearchedPlaceholders(searchKey) {
     let output = "";
+    let formCon = document.querySelector(".header__form-con");
     let form = document.querySelector(".header__form");
-    form.replaceWith(this.alert);
+    form.style.display = "none";
+    formCon.appendChild(this.alert);
     for (let i = 0; i < 10; i++) {
       output += this.placeholder;
     }
@@ -87,7 +95,7 @@ Searched Result Placeholder Function
     document.querySelector(".images").innerHTML = output;
   }
 
-    /* 
+  /* 
   ---------
   
 Search Result Function
@@ -141,8 +149,7 @@ Search Result Function
     }
   }
 
-
-    /* 
+  /* 
   ---------
   
  Zoomed Photo Function
@@ -152,7 +159,7 @@ Search Result Function
 
   zoomPhoto(picture) {
     if (picture.user.location === null) {
-    document.querySelector(".modal-section").innerHTML = ` <div class="modal">
+      document.querySelector(".modal-section").innerHTML = ` <div class="modal">
     <p class="modal__close">
       &times;
     </p>
@@ -169,9 +176,8 @@ Search Result Function
     </div>
    
   </div>`;
-  }
-  else {
-    document.querySelector(".modal-section").innerHTML = ` <div class="modal">
+    } else {
+      document.querySelector(".modal-section").innerHTML = ` <div class="modal">
     <p class="modal__close">
       &times;
     </p>
@@ -190,10 +196,6 @@ Search Result Function
     </div>
    
   </div>`;
+    }
   }
-
 }
-
-}
-
-
