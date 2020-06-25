@@ -46,13 +46,13 @@ Desktop Stylesheet
 ----------------*/
 .header {
   background-color: #dde2e9;
-  height: 30em;
+  height: 25em;
   width: 100%; }
   .header__form-con {
     width: 80%;
     display: block;
     margin: 0 auto;
-    padding-top: 13em; }
+    padding-top: 10em; }
     .header__form-con span {
       color: black; }
   .header__form {
@@ -76,7 +76,7 @@ Desktop Stylesheet
 
 .images {
   max-width: 980px;
-  margin: -130px auto 0;
+  margin: -7em auto 0;
   grid-row-gap: 30px;
   grid-column-gap: 40px;
   -moz-column-gap: 40px;
