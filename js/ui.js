@@ -48,7 +48,7 @@ class UI {
       output += `
             <div class="images__item ${u.id}">
               <img
-                src="${u.urls.small}"
+                src="${u.urls.regular}"
                 style="width: 100%;"
                 class="images__item-image"
               />
@@ -107,7 +107,7 @@ Search Result Function
           output += `
              <div class="images__item ${u.id}">
                <img
-                 src="${u.urls.small}"
+                 src="${u.urls.regular}"
                  style="width: 100%;"
                  class="images__item-image"
                />
@@ -124,7 +124,7 @@ Search Result Function
           output += `
              <div class="images__item ${u.id}">
                <img
-                 src="${u.urls.small}"
+                 src="${u.urls.regular}"
                  style="width: 100%;"
                  class="images__item-image"
                />
@@ -157,7 +157,7 @@ Search Result Function
       &times;
     </p>
     <div class="modal__body">
-        <img class="modal__image" src="${picture.urls.regular}
+        <img class="modal__image" src="${picture.urls.full}
         }"/>
       <div class="modal__info">
         <h3 class="modal__heading">
@@ -176,7 +176,7 @@ Search Result Function
       &times;
     </p>
     <div class="modal__body">
-        <img class="modal__image" src="${picture.urls.regular}
+        <img class="modal__image" src="${picture.urls.full}
         }"/>
       <div class="modal__info">
         <h3 class="modal__heading">
