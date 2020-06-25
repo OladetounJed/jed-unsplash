@@ -157,7 +157,7 @@ Search Result Function
       &times;
     </p>
     <div class="modal__body">
-        <img class="modal__image" src="${picture.urls.full}
+        <img class="modal__image" src="${picture.urls.regular}
         }"/>
       <div class="modal__info">
         <h3 class="modal__heading">
@@ -176,7 +176,7 @@ Search Result Function
       &times;
     </p>
     <div class="modal__body">
-        <img class="modal__image" src="${picture.urls.full}
+        <img class="modal__image" src="${picture.urls.regular}
         }"/>
       <div class="modal__info">
         <h3 class="modal__heading">
