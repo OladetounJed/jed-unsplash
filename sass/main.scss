@@ -24,7 +24,8 @@ p,
 input,
 h1,
 h3,
-img {
+img,
+span {
   padding: 0;
   margin: 0;
   font-family: "Open Sans";
@@ -67,7 +68,7 @@ Desktop Stylesheet
     padding-top: 13em;
 
     span {
-      color: #6c7a91;
+      color: black;
     }
   }
 
@@ -222,7 +223,6 @@ Desktop Stylesheet
   }
 }
 
-
 //Modal Styles
 
 .modal {
@@ -280,11 +280,17 @@ Desktop Stylesheet
 //Mobile Styles
 
 @media (max-width: 600px) {
-  .header__icon {
-    padding-right: 0;
-  }
-  .images__item {
-    grid-row-end: span 6 !important;
+  .header {
+    &__icon {
+      padding-right: 0;
+    }
+    &__item {
+      grid-row-end: span 6 !important;
+    }
+    &__search {
+      padding-left: 1em;
+      width: 60%;
+    }
   }
 
   .modal {

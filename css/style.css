@@ -20,7 +20,8 @@ p,
 input,
 h1,
 h3,
-img {
+img,
+span {
   padding: 0;
   margin: 0;
   font-family: "Open Sans"; }
@@ -53,7 +54,7 @@ Desktop Stylesheet
     margin: 0 auto;
     padding-top: 13em; }
     .header__form-con span {
-      color: #6c7a91; }
+      color: black; }
   .header__form {
     height: 3.5em;
     background-color: white;
@@ -203,8 +204,11 @@ Desktop Stylesheet
 @media (max-width: 600px) {
   .header__icon {
     padding-right: 0; }
-  .images__item {
+  .header__item {
     grid-row-end: span 6 !important; }
+  .header__search {
+    padding-left: 1em;
+    width: 60%; }
   .modal {
     padding: 0; }
     .modal__body {
