@@ -284,13 +284,14 @@ Desktop Stylesheet
     &__icon {
       padding-right: 0;
     }
-    &__item {
-      grid-row-end: span 6 !important;
-    }
+
     &__search {
       padding-left: 1em;
       width: 60%;
     }
+  }
+  .images__item {
+    grid-row-end: span 6 !important;
   }
 
   .modal {

@@ -204,11 +204,11 @@ Desktop Stylesheet
 @media (max-width: 600px) {
   .header__icon {
     padding-right: 0; }
-  .header__item {
-    grid-row-end: span 6 !important; }
   .header__search {
     padding-left: 1em;
     width: 60%; }
+  .images__item {
+    grid-row-end: span 6 !important; }
   .modal {
     padding: 0; }
     .modal__body {
